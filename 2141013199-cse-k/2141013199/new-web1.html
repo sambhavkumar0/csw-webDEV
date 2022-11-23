@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    margin:0;
+    
+    background-color: tomato;
+   
+    
+}
+ 
+ul {
+  list-style-type: none;
+  margin: 0;
+  background-color: beige ;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  
+  top: 0;
+  width: 100%;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  margin: 7px;
+  padding: 14px 16px;
+  text-decoration: none;
+  flex-direction: row;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+li{
+    float:left;
+    font-size: large;
+    padding: 7px 60px;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+.l1{
+    
+    height: 50px;
+    width: 50px;
+    padding: 7px 60px;
+    border: 10px   solid;
+    background-color: aqua;
+    
+}
+</style>
+</head>
+<body>
+
+
+
+<ul>
+    <li><img style="height: 60px; width:100px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAA5FBMVEVNFIz/////YgBADZA9AIT/ZQBLE40+DJHGSk7a1OX39/r8Zx//YQBFAIni2+vTTzTiVir5XwBWGId+X6mgir/GvNZdMZVdHIPLTEpxJXnTyeKKMGrLwtrGuNiCZax8WKnt6PODLW03BpOMcbLRTjjBSES/r9NlH37tWhbx7fbQw+A+DJCmPFgkAJdPFYidOF50TqTgWzdfNJaTNGO8sdBmPZqijMC0o8zFST9qQp2tmch2UaV7KXObgryRdrWsPlO3Q03nVyFbJ5VtI3ulO1srAHyVNWZRFYGxQE3ETlWAK3GkPGe3YzTKAAAGbUlEQVR4nO2b/1vaOhSHC01SQYMgTqcORUBEceJXcAgI6FXv9v//P7dVLDmhTUvBPdt9Pu9vkDTykrQ55wQtCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACIjzQjko8syDgmlmcTACvlTJQvEv95eVCejpO5zBvY+ExHlkkZOZBJR5b7yjDZ1XQ4a3+rYZEYroUbFmC4EDCEYTgwhOGygOH/zjCr8TmGBcLabzWsjrcIV8lHDjXk1xvblOXpBKAZFvUkIPnI4YZ79m/NLXTDpY1sMPxcJQ0Y+rj5LHvDy2aNfSYd/i5DIdn5Rf/m1OVLZ3ArWEA3V2+r2L65KbWrt15t4A81PGCU905SVndPlF7l+oHuKNi4nfM75NruNaGGhxWH0qQvbTqyqXF+w8wuoe55SNYvp3QyB0ydCSk7WdJ+UmWh+2F+nVKr0dd36m1gH17SxnkVzTFN2TVkP2b9POpyOo3y4mSmvXsfZqjBCz3OyRt3tq9o76TVNr52PO8SNxvmpGD90MatD0U2CGrfjWmYLlg/NeeVj4kSxwXatLPoKp0xZN3w1pOJYrAgISIuda7JJKb5g/MueN6g7+/NLRhlGD6DHmU5sy0kMxTNB03x2lMUTp4u39b8glGGP8wf/NR92Ipx1twpjqFVOdIUvdlyalRwMrPLNCyTh0y21O9vlohPVVpsNxVNdPak2aTTPbs5pIJHzQSCkfmhQv3cDVckG5fUr0DOrtFybnZSow2FoCsyXThuUcH1ZCF6fMPOZAMUTFUc6FPY3RLSutDnNUYGLDYa2tvkFR8lzEFiG2bYxyVCKms3t0V6lS3mfhA3yNOeUHFyfPFSCO+TblgJY73YhkXmnyOxtvK+OqGp7NjfIjsGQ05JT3J8d3cP/xbm3ulDDDPfVNSPWNz3KVbDvobBNMxhJMohhutfNc4n19iHoYa9BPtEoCGJvCO2ilnKynGjVCdaj7ybhOmHb2o7//SSxIKm7Ekawplgumx6tRiHGhqyJ+csSJG3kmyE0YasPq9hVblaSHWZxs4PKyuzivx1AUGjYSk1J7ckoVJHjp8B2/rO76UaCwgaDU/nFMySB7oMyy3MhsK+1AxrlYVqAn+eoaUb5s8/zXDu+/CTVunlQhVV07NU3bRP+5uBkHt1QJ40anQa/0lzFPCkuUsUcscwVDf2DtN/afMe3qilirdkyr+a7KZxa956nji5Yvg5uwXZ0XIs+HpJPK6mH5aucWLYetyh+BfZv0J2/KeAWRS2V3qLXMCmeilTs0P1EEpO455/curlp34BTtKIPN7pWnjUxp9ndgx7ezhaHa0cR02vyZDciDk/IhOsU5pCH0fdiaKUxDyeoSnyTv/UFO0nfvnce67xYcRuaTIUt2pTZlI9FCRtyFrk+lTpinml/XutAhkre9LrapRHYmKf8cPnVuv6vJdeMc+isapPo5ry/tu6HJNZa+uRT3a3u9mhExjPULxoGfBIy/m3lVtOvPDWd56vrRasQ75jvBeNhnQSU6mT006JlijKQsbKQOavYvAnoVUSR8rObz8U7ArvfX/hvcrIHNWZT2ZIrhvEvtRz3YSGwl6ngkNHbNOf+/H8dF9x8ndOhb/u3aWPnYeGcZlGnD1FFNLqTCtqJDZsHmmFfcd78milmnV/b3Aar3YlPRq5aYf9tLqIoRCmKkfmvSJ8FV0wnbMizPNvLvZMtf/DxcnXHG+VrhQc+3WhOTQqZiYbiDwIbI5/brHhaIXDj1tOz/n9mvD7fXjY3OMvlcbRAvehpyjD0sSSv0PKHwGzWLqIbWjtUZGG/9jUc37eeg9uhMUfvvND+5jvPHNzkYrRB3vQGTCrBt1o2b5ygCjHM/driam/EU6t6gU2hcJPrfambH3NodZ5cjZjP7vBn2U3H1v8zByXy84XlcCfdUsxc0Sa7YzpviL79ARxU8qLb9Nxb/5dCWc4JC+/quGLsF+13pPCnP2cbgx/PYyiT2skOdUOnm8h2UF9KnlSKs78iN/tUvXnMVv32oUyrrTngA6tt/rvi1Ytv352vlCJg34R1v3ATQgH95b7gQOnmsniZrfTbd/LkG9quQi7GSe3mGfEyH/B8Hp4eeQS/ygAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICF+Q835rROxzFx+gAAAABJRU5ErkJggg==" alt=""></li>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<h1>We deliver your products at your doorstep.</h1>
+<h2>FAST and EASY</h2>
+
+  <li><div class="l1">track</div></li>
+  <li><div class="l1">order</div></li>
+  <li><div class="l1">deliver</div></li>
+
+</body>
+</html>

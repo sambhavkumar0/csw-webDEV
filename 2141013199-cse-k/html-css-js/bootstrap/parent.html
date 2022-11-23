@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .outermost * {
+            display: block;
+            border: 3px solid orange;
+            color: green;
+            padding: 6px;
+            margin: 18px;
+        }
+    </style>
+    <script src="/home/student/Desktop/2141013199-cse-k/html-css-js/jquery-3.6.1.min.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("span").parents().css({ "color": "blue", "border": "3px solid blue" });
+        });
+    </script>
+</head>
+
+<body class="outermost"></body>body
+<div style="width:400px”>div 
+		
+<li>li 
+			<span>span</span>
+		 </li>
+		</ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.1.min.js"></script>
+    <script>
+      $(document).ready(function(){
+$(".b1").click(function(){
+		$("p").prepend("  <b>...additional data</b>.");
+});
+$(".b2").click(function(){
+		$("ul").prepend("<li>....additional list item</li>");
+});
+
+});
+        </script>
+</head>
+<body>
+    <p >para1...</p>
+    <p>para2...</p>
+    <ul>
+        <li>list item1</li>
+        <li>list item2</li>
+        <li>list item3</li>
+    </ul>
+    <button class="b1">append at the end of para</button>
+    <button class="b2">append at the end of list</button>
+</body>
+</html>

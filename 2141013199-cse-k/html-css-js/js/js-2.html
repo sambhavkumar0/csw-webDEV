@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.1.min.js"> </script>
+    <script>
+        $(document).ready(function(){
+$(".a").click(function(){
+		 alert("Text:  " + $("#p1").text());
+});
+$(".b").click(function(){
+		 alert("HTML:  " + $("#p2").html());
+});
+});
+    </script>
+</head>
+<body>
+    <button class="a">BUTTON !</button>
+    <p id="p1">Toota Hua Saaz Hoon Main
+Khud Se Hi Naaraz Hoon Main
+Seene Mein Jo Kahin Pe Dabi Hai
+Aisi Koi Aawaaz Hoon Main
+Sun Le Mujhe Tu Bin Kahe
+Kab Tak Khaamoshi Dil Sahe</p>
+    <button class="b">BUTTON 2</button>
+    <p id="p2">Lorem ipsum dolor sit amet consectetur <b>123455</b>adipisicing elit. Earum excepturi eaque iste ut ea inventore nulla labore beatae odio ab.</p>
+</body>
+</html>

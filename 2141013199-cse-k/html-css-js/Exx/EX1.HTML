@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>jQuery Get Number of Rows in a Table</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            var rowCount = $("#myTable tr").length;
+            alert(rowCount); // Outputs: 4
+        });
+    });
+</script>
+<style>
+    table,tr,td,th{
+        border:2px solid brown;
+    }
+</style>
+</head>
+<body>
+    <table id="myTable" >
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>John</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Peter</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Harry</td>
+            <td>14</td>
+        </tr>
+    </table>
+	<br>
+    <button type="button">Get Number of Rows</button>
+</body> 
+</html>

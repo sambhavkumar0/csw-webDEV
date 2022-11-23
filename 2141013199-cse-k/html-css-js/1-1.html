@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            text-align: center;
+            color: blue;
+            background-color: pink;
+        }
+    </style>
+    <script src="jquery-3.6.1.min.js"> </script>
+    <script>
+        $(document).ready(function () {
+            alert("hey this is my file...");
+        });
+
+        $(document).ready(function () {
+            $(".a").click(function () {
+                $("p1").hide();
+            });
+            $(".b").click(function () {
+                $("p2").hide();
+            });
+        });
+        $(document).ready(function () {
+            $(".lol1").mouseleave(function () {
+                $("p4").hide();
+            });
+            $(".lol").dblclick(function () {
+                $("p4").show();
+            });
+        });
+
+        $(document).ready(function () {
+            $(".bb").click(function () {
+                $("div1").fadeOut(1000);
+                $("div2").fadeOut(1000);
+                $("div3").fadeOut(1000);
+            });
+        })
+
+
+    </script>
+</head>
+
+<body>
+    <p1>this is a scripting language </p1><br>
+    <p2>this is a scripting language </p2><br>
+    <button class="a">click here</button><br>
+    <button class="b">2 button</button><br>
+    <p3>3rd paragraph</p3><br>
+    <p4>4th paragraph</p4><br>
+    <h1 class="lol1">hide 3</h1><br>
+    <h1 class="lol">hide 4</h1><br>
+    <div  class="div1" style="height: 200px; width: 50%; background-color: yellow;" >
+
+    </div>
+    <div class="div2"  style="height: 200px; width: 50%; background-color: blue;">
+
+    </div>
+    <div class="div3"  style="height: 200px; width: 50%; background-color:green; ">
+
+    </div>
+ <button class="bb">dont click</button>
+ <a href="hyperlink.html/">Go Back</a>
+</body>
+
+</html>

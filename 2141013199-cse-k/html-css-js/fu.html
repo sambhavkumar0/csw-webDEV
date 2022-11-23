@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p.n {
+font-style: normal;
+}
+p.i {
+font-style: italic;
+}
+p.o {
+font-style: oblique;
+}
+</style>
+</head>
+<body>
+<p class="n">Normal Text</p>
+<p class="i">Italic Tex</p>
+<p class="o">Oblique Text</p>
+<style>
+a:link {
+color: yellow;
+}
+a:visited {
+color: blue;
+}
+a:hover {
+color: black;
+}
+a:active {
+color: red;
+}
+</style>
+</head>
+<body>
+<p>
+<b><a href="https://google.com" target="_blank">Styling
+Links</a></b>
+</p>
+<p>
+<b>Reminder:</b> a:hover cannot come before a:link and a:visited in
+CSS for complete proper working.
+</p>
+<p>
+<b>Reminder:</b> a:active must follow a:hover property in CSS for
+complete working.
+</p>
+</body>
+</html>
+<html>
+<head>
+<style>
+a:link, a:visited {
+background-color: dodgerblue;
+color: hotpink;
+padding: 10px 20px;
+text-align: left;
+display: inline-block;
+}
+a:hover, a:active {
+background-color: GREEN;
+}
+</style>
+</head>
+<body>
+<a href="google.com" target="_blank">This is a Link Button.</a>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.6.1.min.js">
+</script>
+<script>
+$(document).ready(function(){
+$("#b1").click(function(){
+		 $("img").before("<b>meow meow</b>");
+});
+$("#b2").click(function(){
+		 $("img").after("give me some sunshine give me some rain");
+});
+});
+</script>
+</head>
+<body>
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg" style="height: 500px; width:500px;">
+<br><br>
+<button id="b1">i am bird</button>
+<button id="b2"><h3>meow.</h3></button>
+</body>
+</html>

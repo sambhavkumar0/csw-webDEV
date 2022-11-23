@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <script src="jquery-3.6.1.min.js"> </script>
+    <script>
+      $(document).ready(function () {
+            $(".d1").click(function () {
+                $(".d2").slideDown(4000)
+                
+            });
+            $("#bb2").click(function () {
+                $(".d2").stop();
+                
+            });
+
+
+            });
+
+            $(document).ready(function () {
+            $(".d3").click(function () {
+                $(".d4").slideDown("slow")
+                
+            });
+            $(".d3").click(function () {
+                $(".d4").slideDown("slow")
+                
+            });
+            });
+
+            $(document).ready(function () {
+            $("#bb1").click(function () {
+                $(".b1").animate({height:'toggle'})
+               
+                
+            });
+            });
+        
+        
+
+    </script>
+    <style>
+        .d2{
+            display: none;
+        }
+        .d4{
+            display: none;
+        }
+        button{
+            size: 300%;
+        }
+        .b1{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+   
+   
+
+        <br>
+        <div class="d3">
+            <img src="https://stickerly.pstatic.net/sticker_pack/nOb1eXDtphYK6aOEDuRTEQ/SI8SEK/2/a51ef1f9-3870-49dd-ae9c-1cf5557839b6.png" alt="" style="height: 100px; width:150px; ">
+            <p><b>DEKH KYA RHA HE BE..</b></p> 
+        </div>
+        <div class="d4"> 
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUREhIVFRUVFxcXEBcXFhUVFRcSFRUWFhUVFRYYHSggGBolGxUVITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGxAQGisdHR0rLS0tLSstLS0tLS0tLSstLS0tKy0tLS0tLS0tLS0tKy0tLS0tLS0tNy0tLTcrLS0tLf/AABEIAPsAyQMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAQMEBQcCBgj/xAA6EAACAQMBBgMGAwcEAwAAAAAAAQIDBBEhBQYSMUFRB2FxEyIygZGhFEKxJDNDUmLB0SNEktKCsvD/xAAaAQACAwEBAAAAAAAAAAAAAAAABAIDBQEG/8QAJREAAgMAAgIBBQEBAQAAAAAAAAECAxEEIRIxIgUTMkFRQoEj/9oADAMBAAIRAxEAPwDcQAAAAAAAAAAAAA8xvjvN+DUIxSc5a69IrTJCc1BazqTbxHpwM1tPEWpxrjpqUPzY0kvNdGejnv1ZL+JJ+kJ/q1gpjy6n+yTrkv0enA8vHfq0f5p/ODJVLe+0l/GS9U8k1yK3/pHPCX8L4CrhvBavCVxTy+XvJFhTqqSymmvJ5JqyL9M400OAc5FJ6cFAAAAAAAAAAAAAAAAAAAAAAAAAAAAABGAHNSaSbbwlzb5YMk372tTua6lTy404uOektc5XkXm/W3XOTtqbfDH981ycukPRdTwV/LhRh87l+b+1H0O8erPkxidUbVQZpzyO4EPHBk79t5jVWtgBusjqRJIj09oSy0yys7yaWVUlBf0trP0ZXV7VPEl8yTNYhnt20LpNf5KpRZMp7QrQkp061RSXLM5f5NB3G38def4e5aVT+HPRKXk+if6mT0Ll8S0+o1e5hNTRdTbOEvZCVaa7Pp5MUybcHfeSnGhcTzCXuwlJ/C+mX26GrxZsU3KxahGcXF4zoAAuIgAAAAAAAAAAAAAAAAAAAAQNuXyoUKlZvHBFvPnyX3wTzx/ipXa2fUpx51WofL4n9kV2yyDZ2K1mfWt05xlmWfebb75fPPUrb+HFoQtgxdKD43zfImu4jnLaR5eyLVjzs1Yfic0rfCHVSytPmVt/tdJYjBy9NORUreGrHkkl0TzlFsePZNaRdii+y+q0muaGZPQ42ZeXNblBcPVy0XyJVWwqJZaOOPg8k1pdCal6I0JY0ElPGj5HbpMK8Mo6n2TaFjwuSfPBC29PksY7Lr8+xw89HhkO5jOTzJl9cO9YvJMftKnI2nwz3hnXg6NWWZU0uBv4nHs+5jVvDQtthbQlb1qdWP5ZJ+q6oshb4WJoqsgnE+icikawulVpwqR5SSa+aJJtp6tRngAAdAAAAAAAAAAAAAAARgANmY+LG36eIW0HxVIy4qmOUdGlFv8Am15dCf4l76/hF+GpSXtZxzOWdacHywv5n+mpidW8c3z5+eW33YjyrPJeCRdUsfkyXK6bFVNyHNn0Mr4W+5c07WKRk2WKHofjLo62LY6Fk9la50fyRzZSS+RaULmLFfnJ7uEZzwbtrF5w+XQsZ2q4ceR1Qqodm8kXUl7I+Z5S/s8cipqwwesu6PTJS3lqRhNp4xhSKD2eonseZMq09eRxJJDnkDekaFI6SZIpMZqTyCekWjTfDXeiLirWrLDX7tt6P+k0bJ8zQk001o1qjXty9+YVYxoXDUKq0i/yz6LXpI1eLyVnjISvpaeo94AkWKaIqAAAAAAAAAAAABG2hWlCnKUIuUknhLm2SRGAHydvFcVJXFWVVtzc3xt885K1Zb0Rv2/Ph0rqbrUuFTfxJrDb56Pr8zL6u5l5Tk4q1qSw8cUYuSyIy1P0XJrDvYClGCzzf2Lecesuvp+mdPqyriq9H3KlCcPVcL+4zWuZNYSfppjPyZl2V7LWMRfRIvb9U4PGNeXM62PtFyxp66aFZS2VKo+Ko/kX+y9mcOkVjuyFjhCOLth7Z6K0nJr3X9STh9XqNWtPhWByq8oSlLSaRGry8ysuanlklXFYqq1UjHtliTIdzLp+hCbbeCTVeSNKoOxRNJnUqmNENxeRmbyPUybWHcOzuDw137iOOBYryI6Qka94bbXnVounUk5OD91v+V9M9cHs0ZB4fbYVGrwTeEzXYTTWU89jb4lnlWZ1sPGR2AIBsqAAAAAAAAAAAAATAojADzO/uzo1baUmveg04vrq8NGU/gfI2DfCX7NLzaRmy1MP6gl9zoZq3xIlnYY5lnRilocRlodZM9ouJHER69buNVKrK+5rNlEnvRZGOiXVRZKq4rBcTfchzyX114MeJzKbY1UHGn0OoUe4wsR3BqnEkRgOQojkaZCUzjOIiKT7HbpiYwRTKTiVZw1Tafqe13D38cJexuH7j+GXVPz8jPrmpl6IZ4eo3TJ19ohOCkuz6eo1oyScWmvJjpg+6++Fa3ws8UV0fY2jYu1adzTVWnLKfPyfY1aeQrOv2I2VuBYAIKMlYAAAAAAAACMURgB5/fZfs/8A5L+54CnBGib24/Dyz3WDwMafUxeets/4NUv4jXCOQgxWOUkZ7Rbqwi16WUVVaiegnEr7peQtb8WWwZQ1KHUYdHJcO3Oo2p1XYMeSKhWnkOU7UuY0EhurFHPvNnHIr1Q0Gp0yXUa6kO4qcJOGsi2MTeOenYr7q4b0X2O60nLrp9hp0xyEUiODcIBVZ1UkksjFL3nktSfsGSbVGmeE95idSlnTmjOaEdC43b2q7a4hUXLKUvR8wpn42plVq2LN+Qo3QqqUVJcmk18xw3kzNAAA6AAAAACMUGAHmt9pf6UV56ni4yPX78S92J4pMxebL/0Ga/RIydRY0mIzPky5DzYzUpHaYsiiffsmiO6SOW0grZ6DMqTfMofssQ3Wr4Ik6zZL/DPqNzt/I6iSK+bZGnT8i4jboj3SwWwn3h3plPVgiNMfry1I1VjsEDIN1PLSWfMl21IiKGZFjTWC6bxJIiOxIt5PCyPSlpkrrmrlkK49kJG8+Gm2lcWkU3mVP3Zdz1uTCvCfbPsbr2UniNXTy4uhuuTbpn5RM+yOM6AALysAAAAAYAwA8pvx8EfU8RM9/vrTzQzjVPKM7dUwuf1YNVfiO06nckR1K72i5k2jU0EC3RyUTjhZ1KQikVyJp6c8IsZA5jbkis6ds4lE6yN1J4OnTmeEUm0665Z1Jl/ce7oUFWWuSyuGvSa6GmM1B6b5kZ6jkQ9hSjqSUzmlEJyBvQOKtTRkHGSTUYw+aS5vljv5FsF+kRkXu5ex53FzBRyuFptrokb7+Ef87PNeGm7rtrdTnHFSpq+6T5I9ng1aacj2IWz2QoAAyUgAAAAIxQACm3op5oS8k2ZIquTYd4pYtqr7QZi1qzB+qfmhzjdpjsk/kTLat0OYrKE4MGXB9l7RO4tBqVQ4hVF0ZbLsiI5ie0OZwG5aC8k0TQ/7YiV7sbrVWkVlas8koQciaQt5Wz/9zRBlIcbGpIcisJNDU5DUNRys8I5pYLkuitsfi8HE+4qOZPBH9gOW1lUqvhpwcpPkkaBuBuFw1fb3KTcfhhzin382L4OxhOVXKTccYfZPmapTpqPJYNXjULPJid1j3DuKFAB4WAAAAAAAAAABgBV7yr9mrL+hmOWkU0a7vbPFtU81gyayWn1MD6s/kh3i+mSacDqtDGo7RWo3eVMJmZGJc2QpVUJCozz1/fOMtCws7jijlP1LnCSWnNLjj+ojnlFeq7yEa+Hn6kH2jqOriLK2utS4r8sorKy1Cply9EaXYi15YJcokK8jkbh2zk3iIbq8TJVJ6ZKxT4WSIVRmUBZMmyqkerUbEiJUZFRR3TV/BGh/p1p45yST9EaijP8AwYp4s2+82aAjYpWQQjN/IUAAtIgAAAAJkrNsbap2697WTWVFc/V9keM2lvbVqfD/AKcfJ6v1fMVu5ddfTfZOMHI9/c3tOnrOaXq9foVN7vbbU/4nE+0dfuZpf3cpaym3nXn/AGKavdZeDPs+pTf4ItVP9PZbW3qlXbjyh0j3XmeetnnOnNv9So9t01z9S4tY4S9DK5Epy+UhqqKj6JtF6ldtirhE2nLUpdtVG3hHIdtAzz1zBSep1s+q4PCYxVk+SWvQmbO2ZN6z0+5otfDsr/ZeU9Vk5nE7oWuOrHXQYnKH8JeQ9CKcFnsV1RFgliGOxBrsoh7GY+iFVIVYmV5EOpyY7X7K5spKkdWSKMtCNN6seoofl6KCVxDVWWg4pHezaDrV6dNa5kvoQgtYekbt4WWfs9n0s/mXF9dT16Iuy7b2dKMOWIpEs14rFgk3rAAAkcARigAGNeIV/WpXslKm1TljhnhvK8sdjzG2tsShOMFF+9hvKknjyWMn0RVoxl8UU/VJjdSzpyalKnBtcm4ptejwIS4MZS8mXRuxYY9sXde5vEqiShTfKU8rTyjzZ6Ox8MIZzWryflBcK+r1ND5DN1d06a4qk4wXeTS/UlDiVQ7ZF2yZ5XaO79vZ2s/ZRw2mnKWsn5ZPCqWmS+323njcfs9B5gnmc9cN9l5HnOS9DG+ozhKaUPSHOPFpaxPb4T16lHeVm5PDJl5LXQrralKcimqOLSUumSrG2TecFvTpeR1aWeEtCXGkTbK80jqkdqI+N1KgHcI9ZaFXc6FhXnlZKuvIoivkMr8SuuJeY3JrB1W5kS/qcMR+EdwpkyBXw3oJTI8U20u5pO4Xh5K4Sq1k4w58tX6D6rb6RTKSXs8nsvYte5koUacpN9uXzfQ2fcfw/p2aVWridb6xj6eZ6vZWyaVtBQpQUV936snYG6qFD2LzscgQoAXlYAAAACNinMjjAo9vb1W9pKMKkm5y5RjhvHd9jze0vEB/woJLu9X/AIPAbfsbipd1ZVJqMoTlFdXw50+2CXRXCllpr+5icrmzTyLGq6lmsn7U3nuauOKo0uy91fYqKtapVfvSlLzbbx9SVUoOby/dXoSqNCKjhfPPMzZ3ya1vS5QRDp0sHdZ6fqS5UcF/u5uxKu1UqRxR5rPOePLovMroqndPIoslYoordh7izu6bqzm6UZfutMtru12LG18OqtJ+7VpyXmpRf01NHhBJJJYS0S8kdnpVwavFJoQd0m9PBrc+v1lT+Tf+Bq53Srr4cP5mgiHH9PqD70jM6m6V0+UV9Uef23sC9pJv2EpJc3H3lj5G2YEaIv6dWd++zA4TbhF8njkQrqWC42xDhrVI8nxy/wDZlJcwepiKOTaNFPYkCUtWz2G6Hh7K9gq9eXBSb9yK+Ka7t9uZ5zdnZyubqFFvST970Wp9DbOs40acKUFiMEkkbHEpT+TEr5tPEeY2R4f21u04wjLHWSyz11OmorCWh2BpJJehZvQAAOnAAAAAAAAAEYoAB4DfPdj3pXUJpP8ANF6J+ee54u2lFrMcS83y+Rtd9aRqwlTn8MliXoePuPD+ClmhU4Iv4otcXph50MjmcBzflD2X1250zw8qyWjCrcY5Hr6nhlCTUpXE8rklFJfqWVhuFQhLinKVTHd4X0Qovplr9lzvivRWbqbsyq8NausQ5xi+cu2fI0CEUlhclyEhHCwuh2bPH40KY5EUnNyYAADJEAAAABGKRdo8Xsp8CzLhfCvPGhyTxAYtvLX9pcVZYx78vs8f2Kitywepq7p3r/28v+UP+xDrbnXz/wBtL/lT/wCx5p12Sk34s01OCjmh4V2alf5f5IOS/T+5tiMx8PNhXdrdOVW3lGE4OMpZg8Nax5SzzRpyNzipqvsRteyFAAGioAAAAAAAAAAAAAAAAAAAAQVgAAIKAAAAAAAAAAAAAAACYFAAEwKAAAAAAAAAAAAAAAAAAB//2Q==" alt="" style="height:100px; width:150px;">
+            <p>bhai mujhe bahut mara usne.....</p>
+        </div>
+        <button id="bb1">😞</button>
+        <div>
+        <h2>surya ra nahi</h2>
+        <h2 class="b1" style="background-color: cyan; height:200px; width:200px"></h2>
+        
+    </div>
+    <button id="bb2">STOP</button>
+    <div class="d1">
+        <p>
+            <b>aa tujhe me chand sitare dikhata hun..</b>
+    </p> <button id="bb2">STOP</button>
+        </div><br>
+    <div class="d2">
+             <img src="https://indianmemetemplates.com/wp-content/uploads/idhar-aa-tujhe-deta-hu.jpg" alt="" style="height: 200px; width:200px;">
+        </div> 
+    
+</body>
+</html>
